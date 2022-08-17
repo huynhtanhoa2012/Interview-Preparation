@@ -1,0 +1,39 @@
+
+A priority queue is an abstract data type, while a Heap is a data structure. 
+Therefore, a Heap is not a Priority Queue, but a way to implement a Priority Queue.
+
+There are multiple ways to implement a Priority Queue, such as array and linked list.
+However, these implementations only guarantee O(1) time complexity 
+for either insertion or deletion, 
+while the other operation will have a time complexity of O(N).
+On the other hand, implementing the priority queue with Heap will 
+allow both insertion and deletion to have a time complexity of O(log N)
+
+Insertion O(log N) and Deletion O(log N)
+The maximum/minimum value can be obtained with O(1)
+
+Properties Min-heap:
++ complete binary tree 
++ value of each node <= its children 
+
+# Binary Heap using Array
+left child: 2i + 1
+right child: 2i + 2
+
+# Insertion 
+Adding an element to the Heap. 
+After inserting the element, the properties (invariant) of the Heap should remain unchanged.
+
+# Deletion 
+Eemoving the “top” element from the Heap. 
+After deleting the element, the property (invariant) of Heap should remain unchanged.
+
+# Notes on Python:
++ it uses zero-based indexing, and this means that it stores the root node at 
+index zero instead of the size of the heap
++ the built-in heapq module does not offer a direct way to create a max heap.
+
+# Applications of Heap
+1. Heap Sort
+2. The Top-K problem
+3. The K-th element

@@ -1,0 +1,22 @@
+
+SELECTION and INSERTION SORT
+During the selection sort algorithm, the array or list is divided into two parts: 
++ the sorted part at the left end 
++ the unsorted part at the right end. 
+
+Solution SELECTION:
+# Loop entire array to n-2
+    # Variable to store index of minimum value in array
+    # Run nested loop through the rest of array to find minimum value
+        # Store index of minimum value  
+    # Swap the element at indexMin and i
+
+Solution INSERTION:
+# Loop array from 1 to n-1
+    # Create a variable to store value of arr[i]
+    # Create a varibale to store hole
+    # Chekc if hole > 0 and arr[hole-1] > value
+        # arr[hole] = arr[hole-1]
+        # hole = hole - 1
+    # arr[hole] = value
+
